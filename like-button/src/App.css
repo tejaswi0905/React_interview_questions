@@ -1,0 +1,38 @@
+:root {
+  --default-color: #888;
+  --active-color: #f00;
+}
+
+.like {
+  all: unset;
+  display: inline-block;
+  min-width: 60px;
+  cursor: pointer;
+  border: solid var(--default-color) 1px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  color: var(--default-color);
+  font-weight: bold;
+}
+
+.like:hover {
+  border: solid var(--active-color) 1px;
+  color: var(--active-color);
+}
+
+.liked,
+.liked:hover {
+  background-color: var(--active-color);
+  border-color: var(--active-color);
+  color: #fff;
+}
+
+.like > .contents {
+  display: flex;
+  justify-content: space-around;
+}
+
+.like > .contents > *:not(:last-child) {
+  margin-right: 3px;
+}

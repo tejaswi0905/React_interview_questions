@@ -1,0 +1,48 @@
+/*Todo later*/
+
+.app {
+  width: 40rem;
+  border: 0.125rem black solid;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+
+.char-length {
+  display: flex;
+  flex-direction: column;
+}
+
+.char-length span {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.check-boxes {
+  margin-top: 0.25rem;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.check-boxes div {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 1.5rem;
+}
+
+.createPassword {
+  display: flex;
+  justify-content: center;
+}
+
+.error-text {
+  color: red;
+  font-weight: 400;
+}

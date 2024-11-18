@@ -1,0 +1,19 @@
+.App {
+  width: 95%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.slider {
+  width: 100%;
+}
+.labels {
+  display: flex;
+  justify-content: space-between;
+}
+.labels-emi {
+  display: flex;
+  justify-content: center;
+}

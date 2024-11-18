@@ -1,0 +1,27 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 100;
+}
+
+.progress-bar {
+  position: relative;
+  height: 1.125rem;
+  width: 25rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin: auto auto;
+  overflow: hidden;
+}
+
+.progress-text {
+  position: absolute;
+  left: 49%;
+}
+
+.green-fill {
+  position: absolute;
+  left: 0;
+  height: 1.125rem;
+  background-color: #00c215;
+}

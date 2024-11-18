@@ -1,0 +1,85 @@
+:root {
+  --spacer: 1rem;
+  --clr-neutral-300: #f8e0e0;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* utilityClasses */
+
+.flow-content > * + * {
+  margin-top: var(--flow-space, var(--spacer));
+}
+
+.split-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.split-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.split-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 40em) {
+  .split-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.25rem;
+  }
+}
+
+/* components */
+.item {
+  cursor: pointer;
+  width: 12rem;
+  margin: 0 auto;
+  border: 0.025rem solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: var(--clr-neutral-300);
+}
+
+.item-sub-section {
+  justify-content: space-between;
+}
+
+.items {
+}
+
+.pages {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2;
+  --flow-space: 1.5rem;
+}
+
+.pages > .split-flex-row {
+  justify-content: center;
+}
+
+.pagination-page {
+  padding: 1rem;
+  margin: 0 10px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  cursor: pointer;
+}

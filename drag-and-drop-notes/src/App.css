@@ -1,0 +1,9 @@
+.note {
+  position: absolute;
+  border: 1px solid black;
+  user-select: none;
+  padding: 1rem;
+  width: 10rem;
+  cursor: move;
+  background-color: lightyellow;
+}

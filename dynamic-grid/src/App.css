@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 500px;
+}
+
+.grid-two-wrapper {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-two-len), 1fr);
+  gap: 2px;
+  width: 500px;
+  height: 500px;
+}
+
+.row {
+  display: flex;
+  gap: 2px;
+}
+
+.cell {
+  flex: 1;
+  width: calc(100% / var(--grid-len));
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.cell-two {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90%;
+}
+
+label {
+  display: block;
+}
+input {
+  width: 100%;
+  min-width: 0px;
+}
+
+p {
+  margin-left: 10px;
+}
+
+.container-grid-two {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}

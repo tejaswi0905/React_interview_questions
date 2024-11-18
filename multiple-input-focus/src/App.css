@@ -1,0 +1,21 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px black;
+  justify-content: space-between;
+  width: 25rem;
+  padding: 1rem;
+}
+
+.flow-content > * + * {
+  margin-top: 2rem;
+}
+
+.app-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.selector {
+  align-self: center;
+}
